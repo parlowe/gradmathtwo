@@ -51,16 +51,37 @@ Since a concentration of 7.5  μM was assumed, the data was taken from the upper
 
 #### Table 1: Parameter Comparisons
 <p align="center">
-  <img src="paprFigure.png" width="450"> </p>
+  <img src="parameters.png" width="450"> </p>
 
 The parameters for the model were much different than those proposed in the paper, however it is likely that these parameter estimates came from analysis of the effects of all paracrine factors. When the fits of the solutions were compared to the experimental data for M, it was clear that the fit was not ideal for the system (Figure 4). 
+
+#### Figure 4: Model Fit Compared to Experimental Data for M
+<p align="center">
+  <img src="m.png" width="450"> </p>
 
 This was also likely due to missing data for the other modeled values in the system since values for M were the only values reported. 
 
 ## Bifurcation Analysis 
 A bifurcation analysis was performed to assess how changes in the parameter ac impact the steady state behavior of the solution for M. I chose to examine this parameter because it relates to the action of CHIR on the differentiation process. CHIR is a common inhibitor that is used in stem cell differentiation and I had a personal interest related to my own research in how it affects the dynamics of the system  For this analysis N and X were held constant to create three flow diagrams for the system when ac (Figures 5 -7). 
 
+#### Figure 5: Flow Analysis ac < 0
+<p align="center">
+  <img src="ac_less.png" width="450"> </p>
+
+#### Figure 6: Flow Analysis ac > 0
+<p align="center">
+  <img src="ac_greater.png" width="450"> </p>
+
+#### Figure 7: Flow Analysis ac = 0
+<p align="center">
+  <img src="ac_equal.png" width="450"> </p>
+
+
 From the flow diagrams it is clear that there is a constant steady state around 68000 cells differentiated. This is a transcritical steady state that depends on the value of the parameter value of ac. When the value of ac is less than zero there is an unstable steady state for the system otherwise this steady state is stable. Since it is known that CHIR positively influences the differentiation rate of pluripotent stem cells, it is unlikely that the unstable steady state will be encountered in a living system. The bifurcation diagram for this analysis is included in Figure 8 below. 
+
+#### Figure 8: Bifurcation Diagram
+<p align="center">
+  <img src="bifurcation.png" width="450"> </p>
 
 ## Sensitivity Analysis 
 In order to determine which parameters have the highest impact on the value of M sensitivity analysis was also performed. Local sensitivity was performed by perturbing the fits for each of the parameters by 1% and normalizing the perturbation value based on the effect that it had on the system. Figure 9 shows the impact of the different parameters on the value of M due to local perturbations. 
