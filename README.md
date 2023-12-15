@@ -86,11 +86,19 @@ From the flow diagrams it is clear that there is a constant steady state around 
 ## Sensitivity Analysis 
 In order to determine which parameters have the highest impact on the value of M sensitivity analysis was also performed. Local sensitivity was performed by perturbing the fits for each of the parameters by 1% and normalizing the perturbation value based on the effect that it had on the system. Figure 9 shows the impact of the different parameters on the value of M due to local perturbations. 
 
+#### Figure 9: Normalized 1% Perturbations of Parameters
+<p align="center">
+  <img src="local_sensitivity.png" width="450"> </p>
+
 Locally, d0 and ac have the largest impact on the system when perturbed. More insight into these parameters would more easily demonstrate parameter effects for this model and thus should be focused on in order to improve it. 
 
 Global sensitivity analysis was also performed to check the results of the local sensitivity analysis and to gain insight into the system for larger perturbations. Values for the parameters were randomly simulated within a 20% tolerance around the fitted parameter and these values were used to calculate normalized sensitivities and fit a linear model to the parameters. The resultant linear model was: 
 
 M=  1623.39 d0 +  60.73 ac + 26.55 ix- 231.57 dN + 25.39 px+ 43.87 icx - 40.43 ex . This demonstrates that in addition to having a local effect d0 and ac have a global effect on the system. However, when this model is used to predict values for M it does not accurately predict the values as is demonstrated in FIgure 10. Thus this analysis should be taken sparingly. 
+
+#### Figure 10: Linear Model for Globa, Sensitivty Perturbations
+<p align="center">
+  <img src="linear_model.png" width="450"> </p>
 
 ## Conclusion 
 Completing this analysis demonstrates the complexity of modeling for cellular behaviors. The resultant fits and parameter estimates for the simplified model did not match the experimental data, nor the authors parameter estimates well. However, sensitivity and bifurcation analysis demonstrated some parameters that could be manipulated in further experimental or computational analyses to provide greater insight into the behavior of this model. Studies that more accurately measure the activation of differentiation by CHIR or the basal differentiation rate could help to better parameterize this system. Furthermore, understanding why the value of ac does not impact the steady state behavior of the system over any observable range would be of interest. 
