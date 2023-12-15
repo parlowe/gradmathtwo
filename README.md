@@ -4,6 +4,10 @@ Gaspari, E., Franke, A., Robles-Diaz, D., Zweigerdt, R., Roeder, I., Zerjatke, T
 ## Introduction 
 Pluripotent stem cells have recently become the source for much excitement in tissue engineering and regenerative medicine applications because of their theoretical capability to differentiate into any cell type. However, differentiation mechanisms are poorly understood making it difficult to achieve this promise in reality . The aim of this paper is to model the differentiation of human pluripotent stem cells into mesendoderm cells through positive and negative interactions with paracrine factors. The authors propose a mechanism by which stem cells differentiate into MIXL+ or pro-mesendoderm lineage cells via positive enhancement by CHIR99021 (CHIR). Additionally, paracrine factors can further enhance or dampen this differentiation. Figure 1 demonstrates how these factors relate to promote differentiation. 
 
+#### Figure 1: Illustrated Differentiation Model
+<p align="center">
+  <img src="pathway.png" width="350"> </p>
+
 While the most complex of the models incorporates all of the interactions in Figure 1, to replicate this work I have chosen to examine a simplified model that incorporates the effects of CHIR and one paracrine factor that has an inhibitory effect on differentiation, Factor X. The model is a system of three ordinary differential equations that model the cell count of mesendoderm cells (M) which are MIXL+, differentiated cells that are not mesoendoderm lineage (N) which are MIXL-, and the concentration of factor X which is produced by the cells. The model is included below in Figure 2. 
 
 
