@@ -10,28 +10,48 @@ Pluripotent stem cells have recently become the source for much excitement in ti
 
 While the most complex of the models incorporates all of the interactions in Figure 1, to replicate this work I have chosen to examine a simplified model that incorporates the effects of CHIR and one paracrine factor that has an inhibitory effect on differentiation, Factor X. The model is a system of three ordinary differential equations that model the cell count of mesendoderm cells (M) which are MIXL+, differentiated cells that are not mesoendoderm lineage (N) which are MIXL-, and the concentration of factor X which is produced by the cells. The model is included below in Figure 2. 
 
+#### Figure 2: Model Equations
+<p align="center">
+  <img src="model.png" width="350"> </p>
 
+Where:
 
-
-
-Where 
 M = MIXL+ cell numbers
+
 N = MIXL- cell numbers
+
 Γ = total number of cells
+
 X =  concentration of factor X 
+
 C = concentration of CHIR
+
 d0 = basal differentiation rate 
+
 ac = enhancement of differentiation rate by CHIR
+
 ix = inhibition rate of differentiation by factor X
+
 dN = differentiation into non mesendoderm lineages
+
 px = production rate of factor X
+
 icx = inhibition rate of factor X by CHIR
+
 ex = degradation rate of factor X
 
 ## Model Construction and Parameter Fitting 
 The model was parameterized using the scipy module and the minimize function to minimize the root mean square error of the ODE solution compared to the experimental data in the paper when different values for the parameters were applied. In the paper the authors assumed that the cell number and CHIR concentration was constant throughout the analysis. In this analysis, a CHIR concentration of 7.5 μM was assumed along with a population of 7.7 million cells. A plot digitizer was used to digitize the following plot which was included in the paper (Figure 3).
 
+#### Figure 3: Paper Data
+<p align="center">
+  <img src="paperFigure.png" width="450"> </p>
+
 Since a concentration of 7.5  μM was assumed, the data was taken from the upper left hand portion of the figure. The final error value was calculated to be 97.5, and the following estimates for the parameters compared to those obtained by the authors in the paper. (Table 1).
+
+#### Table 1: Parameter Comparisons
+<p align="center">
+  <img src="paprFigure.png" width="450"> </p>
 
 The parameters for the model were much different than those proposed in the paper, however it is likely that these parameter estimates came from analysis of the effects of all paracrine factors. When the fits of the solutions were compared to the experimental data for M, it was clear that the fit was not ideal for the system (Figure 4). 
 
